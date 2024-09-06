@@ -1,6 +1,10 @@
+<a href="https://tlou-info.vercel.app/" target="_blank">Acesse o site clicando aqui.</a>
+
 # The Last of Us - INFO 
  
 > Projeto feito durante Imersão Dev da Alura + Google Gemini.
+> Aqui está uma prévia do projeto em ação:
+![The Last of Us - Character Search](https://github.com/user-attachments/assets/29b496b9-007a-4d99-9b4b-67f9d7dbf0a7)
 
 Bem-vindo(a) ao **The Last of Us - INFO**. Permite que os usuários pesquisem por **personagens e extras** do jogo e série **The Last of Us**, sendo o meu primeiro projeto. Foi desenvolvido como uma forma de homenagear **The Last of Us**, uma das franquias mais impactantes e aclamadas dos últimos tempos.
 ## 🔍 **Funcionalidades Principais**
