@@ -2,6 +2,7 @@ console.log('Olá, mundo!');
 
 // Função para realizar a pesquisa
 function realizarPesquisa() {
+    
     var searchQuery = document.querySelector('input[type="text"]').value.toLowerCase();
     var items = document.querySelectorAll('.item-resultado');
     var resultadosDiv = document.querySelector('.resultados-pesquisa');

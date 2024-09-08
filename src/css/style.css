@@ -13,7 +13,8 @@
 /* Estiliza o corpo da página */
 body {
      /* Define a fonte padrão */
-    background-image: url(../images/image.png);
+    background-image: url(../images/FUNDONAOAPAGAJOHN.png);
+    background-color: #8a4d25;
     background-size: cover;
     background-position: center;
     display: flex; /* Usa Flexbox para layout */
@@ -54,30 +55,36 @@ section {
     margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
 }
 
+#campo-pesquisa {
+    background-color: #000000ce;
+    backdrop-filter: blur(4px);
+}
+
 section input {
-    background-color: rgba(255, 255, 255, 0.705);
-    width: 25rem; /* Reduz a largura para dar mais espaço ao botão */
-    border: none; /* Remove a borda padrão */
-    padding: 1rem; /* Espaçamento interno */
-    border-radius: 1.5rem 0 0 1.5rem; /* Arredonda apenas o lado esquerdo */
-    margin: 0; /* Remove a margem inferior */
-    color: #45474B; /* Cor do texto */
-    font-size: 1rem; /* Tamanho da fonte */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffffffef;
+    font-size: 1rem;
+    box-sizing: border-box;
 }
 
 section button {
-    padding: 1rem 1.2rem; /* Espaçamento interno do botão */
-    border: none; /* Remove a borda padrão */
-    border-radius: 0 1.5rem 1.5rem 0; /* Arredonda apenas o lado direito */
-    background-color: rgba(5, 5, 5, 0.8); /* Cor de fundo do botão */
-    color: #F5F7F8; /* Cor do texto do botão */
-    font-size: 1rem; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    padding: 1rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: rgba(5, 5, 5, 0.8);
+    color: #F5F7F8;
+    font-size: 1rem;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%; /* Garante que o botão tenha a mesma altura do input */
+    height: 100%;
+    margin-left: 10px;
+    margin-top: -20px;
 }
 
 
@@ -111,7 +118,16 @@ section button {
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; /* Tamanho da fonte */
-    color: #ffffff; /* Cor do texto */
+    color: #ffffffe7; /* Cor do texto */
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.item-resultado h2:hover {
+    color: #68b356; 
+    /*text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);*/
+    text-shadow: 0 0 5px rgba(125, 228, 78, 0.8);  
 }
 
 /* Estiliza os links dentro dos itens de resultado */
@@ -123,6 +139,7 @@ section button {
 /* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-shadow: 0 0 5px rgba(92, 175, 44, 0.8);
 }
 
 .sem-resultados p {
@@ -142,24 +159,61 @@ section button {
 
 /* Estiliza o rodapé da página */
 footer {
-    min-height: 50px;
-    background-color: rgba(5, 5, 5, 0.8); /* Cor de fundo do rodapé */
-    color: #45474B; /* Cor do texto */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #535353; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    padding: 0; /* Espaçamento interno */
+    padding: 0 ; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
     position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
+    border-top: 2px solid rgba(255, 255, 255, 0.062);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
     font-family: "inter";
 }
 
 .linkFooter{
     text-decoration: none;
-    color: #f5f7f8d7;
+    color: #969696;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .linkFooter:hover{
     text-decoration: underline;
-    color: #f5f7f88e;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);    
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+        padding: 0.5rem;
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
 }
